@@ -16,8 +16,8 @@ for i in range(len(chardle_word)):
     if(chardle_word[i] == char_guess):
       print(char_guess+" found at index "+ str(i))
 
-numb_instances: int=sum(char==char_guess for char in chardle_word)
-if numb_instances!=0:
-    print(str(numb_instances)+" instances of "+char_guess+" found in "+chardle_word)
+num_instances: int=sum(char==char_guess for char in chardle_word)
+if num_instances!=0:
+    print(str(num_instances)+" instances of "+char_guess+" found in "+chardle_word)
 else:
     print("No instances of "+char_guess+" found in "+chardle_word)
