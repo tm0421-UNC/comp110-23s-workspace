@@ -12,7 +12,7 @@ if len(char_guess) != 1:
     exit()
 print("Searching for " + char_guess + " in " + key_word)
 
-for x in range(len(key_word)):
+for x in range(0,4):
     if key_word[x] == char_guess:
         print(char_guess + " found at index " + str(x))
 
