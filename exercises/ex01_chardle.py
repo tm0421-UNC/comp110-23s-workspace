@@ -12,8 +12,8 @@ if len(char_guess) != 1:
     exit()
 print("Searching for " + char_guess + " in " + key_word)
 
-for i in range(len(key_word)):
-    if key_word[i] == char_guess:
+for x in range(len(key_word)):
+    if key_word[x] == char_guess:
         print(char_guess + " found at index " + str(i))
 
 num_instances: int = sum(char == char_guess for char in key_word)
