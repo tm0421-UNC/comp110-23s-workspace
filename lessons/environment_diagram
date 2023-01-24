@@ -5,7 +5,7 @@ guess: int = 1
 
 if guess == secret:
     print("Success!")
-    print(str(guess) + "is the secret number!")
+    print(str(guess) + " is the secret number!")
 else:
     guess = guess + 1
     if guess == secret:

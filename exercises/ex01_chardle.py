@@ -19,7 +19,8 @@ for x in range(len(key_word)):
 num_instances: int = sum(char == char_guess for char in key_word)
 if num_instances == 1:
     print(str(num_instances) + " instance of " + char_guess + " found in " + key_word)
-elif num_instances > 1:
-    print(str(num_instances) + " instances of " + char_guess + " found in " + key_word)
-else:
-    print("No instances of " + char_guess + " found in " + key_word)
+else: 
+    if num_instances > 1:
+        print(str(num_instances) + " instances of " + char_guess + " found in " + key_word)
+    else:
+        print("No instances of " + char_guess + " found in " + key_word)
