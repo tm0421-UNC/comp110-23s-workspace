@@ -2,7 +2,7 @@
 
 __author__ = "730391892"
 
-secret_word: str = "python"
+secret_word: str = "knoll"
 word_len: int = len(secret_word)
 guess: str = input(f"What is your {word_len}-letter guess? ")
 WHITE_BOX: str = "\U00002B1C"
@@ -26,9 +26,10 @@ while idx < len(secret_word):
             alt_idx = alt_idx + 1
         if char_elsewhere == True:
             index_emoji = index_emoji + YELLOW_BOX
-            char_elsewhere = False
         else: 
             index_emoji = index_emoji + WHITE_BOX
+    alt_idx = 0
+    char_elsewhere = False
     idx = idx + 1
 print(index_emoji)
 
